@@ -19,15 +19,22 @@
 <span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="ns">Request</span>;
 <span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="ns">Response</span>;
 
-<span class="var">$container</span> <span class="keyword">=</span> <span class="ns">Yolo</span>\<span class="class">Factory</span><span class="keyword">::</span>createContainer();
-<span class="var">$builder</span> <span class="keyword">=</span> <span class="var">$container</span><span class="keyword">-&gt;</span>get(<span class="str">'route_builder'</span>);
+<span class="var">$container</span> <span class="keyword">=</span> <span class="ns">Yolo</span>\createContainer(
+    [
+        <span class="str">'debug'</span> <span class="keyword">=&gt;</span> <span class="bool">true</span>,
+    ],
+    [
+        <span class="keyword">new</span> <span class="ns">Yolo</span>\<span class="ns">DependencyInjection</span>\<span class="class">MonologExtension</span>(),
+    ]
+);
 
-<span class="var">$builder</span><span class="keyword">-&gt;</span>get(<span class="str">'hello'</span>, <span class="str">'/'</span>, <span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
+<span class="var">$app</span> <span class="keyword">=</span> <span class="keyword">new</span> <span class="ns">Yolo</span>\<span class="class">Application</span>(<span class="var">$container</span>);
+
+<span class="var">$app</span><span class="keyword">-&gt;</span>get(<span class="str">'hello'</span>, <span class="str">'/'</span>, <span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
     <span class="keyword">return new</span> <span class="class">Response</span>(<span class="str">"Hallo welt, got swag yo!\n"</span>);
 });
 
-<span class="var">$front</span> = <span class="var">$container</span><span class="keyword">-&gt;</span>get(<span class="str">'front_controller'</span>);
-<span class="var">$front</span><span class="keyword">-&gt;</span>run();
+<span class="var">$app</span><span class="keyword">-&gt;</span>run();
 
 ?&gt;</code></pre>
 
