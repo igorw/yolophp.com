@@ -30,7 +30,7 @@
 
 <span class="var">$app</span> <span class="keyword">=</span> <span class="keyword">new</span> <span class="ns">Yolo</span>\<span class="class">Application</span>(<span class="var">$container</span>);
 
-<span class="var">$app</span><span class="keyword">-&gt;</span>get(<span class="str">'hello'</span>, <span class="str">'/'</span>, <span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
+<span class="var">$app</span><span class="keyword">-&gt;</span>get(<span class="str">'/'</span>, <span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
     <span class="keyword">return new</span> <span class="class">Response</span>(<span class="str">"Hallo welt, got swag yo!\n"</span>);
 });
 
