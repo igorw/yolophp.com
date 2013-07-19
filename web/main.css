@@ -67,6 +67,11 @@ article h1 > span {
     background: url(videos.gif);
 }
 
+#yce {
+    width: 115px;
+    background: url(yce.gif);
+}
+
 #author {
     width: 189px;
     background: url(author.gif);
