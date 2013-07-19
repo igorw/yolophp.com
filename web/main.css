@@ -77,6 +77,12 @@ article h1 > span {
     background: url(author.gif);
 }
 
+hr {
+    border: dashed 1px #E01B5D;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* syntax */
 
 code {
