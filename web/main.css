@@ -1,3 +1,15 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
 body {
     width: 500px;
     margin: 0 auto 50px;
@@ -143,6 +155,22 @@ li {
     height: 38px;
     padding-left: 48px;
     padding-top: 8px;
+}
+
+ul#badges {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+ul#badges li {
+    float: left;
+    margin-right: 23px;
+    margin-bottom: 15px;
+}
+
+ul#badges img {
+    border: 1px solid black;
 }
 
 .author {

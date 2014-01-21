@@ -95,6 +95,8 @@
         <strong style="color: #E01B5D;">Become a YOLO Certified Engineer!</strong>
     </p>
 
+    <ul id="badges" class="clearfix"></ul>
+
     <p>
         <center>
             <img src="stephcd_glasses.gif" alt="La dudette" width="300">
@@ -152,6 +154,24 @@ gif titles: http://textanim.com/
 window.onload = function () {
     console.log('YOU ONLY YOLO ONCE');
 };
+
+var badgesEl = document.getElementById('badges');
+
+function escapeHTML(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function reqListener() {
+    var badges = JSON.parse(this.responseText);
+    badges.forEach(function (badge) {
+        badgesEl.innerHTML += "<li><a href=\""+escapeHTML(badge.url)+"\"><img src=\""+escapeHTML(badge.avatar)+"\"></a></li>";
+    });
+}
+
+var oReq = new XMLHttpRequest();
+oReq.onload = reqListener;
+oReq.open("get", "badges.json", true);
+oReq.send();
 </script>
 
 </body>
