@@ -169,7 +169,7 @@ ul#badges li {
     margin-bottom: 15px;
 }
 
-ul#badges img {
+ul#badges a {
     border: 1px solid black;
 }
 
