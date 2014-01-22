@@ -164,7 +164,7 @@ function escapeHTML(str) {
 function reqListener() {
     var badges = JSON.parse(this.responseText);
     badges.forEach(function (badge) {
-        badgesEl.innerHTML += "<li><a href=\""+escapeHTML(badge.url)+"\"><img src=\""+escapeHTML(badge.avatar)+"\"></a></li>";
+        badgesEl.innerHTML += "<li><a href=\""+escapeHTML(badge.url)+"\"><img src=\""+escapeHTML(badge.avatar)+"\" width=\"100\" height=\"100\"></a></li>";
     });
 }
 
