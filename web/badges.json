@@ -28,5 +28,15 @@
         "name": "Jeremy Mikola",
         "avatar": "http://gravatar.com/avatar/f23700b51dc0c196c1dc02f84aeeecdf?s=100",
         "url": "https://twitter.com/jmikola"
+    },
+    {
+        "name": "Benoît Merlet",
+        "avatar": "http://gravatar.com/avatar/70a6e5c61ba886bbdea1401197def8c7?s=100",
+        "url": "https://twitter.com/trompouet"
+    },
+    {
+        "name": "Dave Marshall",
+        "avatar": "http://gravatar.com/avatar/24ce38141350e94d832a90cc2242a471?s=100",
+        "url": "https://twitter.com/davedevelopment"
     }
 ]
