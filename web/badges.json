@@ -48,5 +48,10 @@
         "name": "Marco Pivetta",
         "avatar": "http://gravatar.com/avatar/3cf7a8ab0bccee5b65d39b50a170a555?s=100",
         "url": "https://twitter.com/Ocramius"
+    },
+    {
+        "name": "Evan Coury",
+        "avatar": "http://gravatar.com/avatar/5fac6a9353bbc9235568e920cdd400f6?s=100",
+        "url": "https://twitter.com/EvanDotPro"
     }
 ]
