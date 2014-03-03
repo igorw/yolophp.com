@@ -63,5 +63,10 @@
         "name": "Jenny Wong",
         "avatar": "/jenny.png",
         "url": "https://twitter.com/miss_jwo"
+    },
+    {
+        "name": "Eric Hogue",
+        "avatar": "http://gravatar.com/avatar/7952608036efe43597e88cd635fc2472?s=100",
+        "url": "https://twitter.com/ehogue"
     }
 ]
