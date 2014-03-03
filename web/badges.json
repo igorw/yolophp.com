@@ -58,5 +58,10 @@
         "name": "Tobias Gies",
         "avatar": "http://gravatar.com/avatar/52420d41bc01de9554ad8888211458f4?s=100",
         "url": "https://twitter.com/tobiasgies"
+    },
+    {
+        "name": "Jenny Wong",
+        "avatar": "/jenny.png",
+        "url": "https://twitter.com/miss_jwo"
     }
 ]
