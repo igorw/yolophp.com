@@ -16,22 +16,13 @@
 
 <pre><code>&lt;?
 
-<span class="var">$container</span> <span class="keyword">=</span> <span class="ns">Yolo</span>\createContainer(
-    [
-        <span class="str">'debug'</span> <span class="keyword">=&gt;</span> <span class="bool">true</span>,
-    ],
-    [
-        <span class="keyword">new</span> <span class="ns">Yolo</span>\<span class="ns">DependencyInjection</span>\<span class="class">MonologExtension</span>(),
-    ]
-);
+<span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="class">Request</span>;
+<span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="class">Response</span>;
 
-<span class="var">$app</span> <span class="keyword">=</span> <span class="keyword">new</span> <span class="ns">Yolo</span>\<span class="class">Application</span>(<span class="var">$container</span>);
-
-<span class="var">$app</span><span class="keyword">-&gt;</span>get(<span class="str">'/'</span>, <span class="func">function</span> (<span class="var">$request</span>) {
-    <span class="keyword">return</span> <span class="str">"Hallo welt, got swag yo!\n"</span>;
-});
-
-<span class="var">$app</span><span class="keyword">-&gt;</span>run();
+<span class="ns">yolo\yolo</span><span class="keyword">::</span>yolo()
+    <span class="keyword">-></span>yolo(<span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
+        <span class="return">return</span> <span class="keyword">new</span> <span class="class">Response</span>(<span class="str">'YOLO'</span>);
+    });
 
 ?&gt;</code></pre>
 
@@ -58,7 +49,7 @@
         <a href="http://getcomposer.org/">composer</a>:
     </p>
 
-    <pre class="terminal"><code><span class="dollar"></span>composer require igorw/yolo:~42.0@dev</code></pre>
+    <pre class="terminal"><code><span class="dollar"></span>composer require igorw/yolo:~43.0@dev</code></pre>
 
     <p style="text-align: right;">
         <img src="beethoven.png" alt="Beethoven approves">
@@ -107,20 +98,6 @@
         </center>
     </p>
 
-    <h1 id="videos"><span>Videos</span></h1>
-
-    <p>
-        <iframe width="500" height="282" src="http://www.youtube.com/embed/9VUoIruQNMg?rel=0" frameborder="0" allowfullscreen></iframe>
-    </p>
-
-    <p>
-        <a href="https://vimeo.com/51201498">Vimeo disallowed embedding this awesome video before it was cool.</a>
-    </p>
-
-    <p>
-        <iframe width="500" height="438" style="border: 0px; background-color: transparent; margin: 0px; padding: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;" frameborder="0" src="https://speakerdeck.com/player/81ee5f9072bd01309699123138155547?"></iframe>
-    </p>
-
     <hr />
 
     <h1 id="author"><span>Author</span></h1>
@@ -131,8 +108,6 @@
         </a>
 
         <p>Brought to you by <a href="https://twitter.com/igorwhiletrue">@igorwhiletrue</a>.</p>
-
-        <p>He also made <a href="https://github.com/silexphp/Silex">Silex</a>.</p>
     </div>
 </article>
 
