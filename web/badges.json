@@ -68,5 +68,20 @@
         "name": "Eric Hogue",
         "avatar": "http://gravatar.com/avatar/7952608036efe43597e88cd635fc2472?s=100",
         "url": "https://twitter.com/ehogue"
+    },
+    {
+        "name": "Martin Holzhauer",
+        "avatar": "http://gravatar.com/avatar/54aafa838a109312295ba9a250920aad?s=100",
+        "url": "https://twitter.com/woodworker"
+    },
+    {
+        "name": "Daniel Fahlke",
+        "avatar": "http://gravatar.com/avatar/c694baa5e93037ce8c0530aad2937670?s=100",
+        "url": "https://twitter.com/Flyingmana"
+    },
+    {
+        "name": "Anne-Julia Scheuermann",
+        "avatar": "http://gravatar.com/avatar/5fcfa864ae04004e92416a5ea05d5ffa?s=100",
+        "url": "https://dazz.github.io"
     }
 ]
