@@ -103,5 +103,15 @@
         "name": "Michelangelo van Dam",
         "avatar": "http://gravatar.com/avatar/194eb9f82dcaf56bcf47444a99f5f5b6?s=100",
         "url": "https://twitter.com/DragonBe"
+    },
+    {
+        "name": "James Titcumb",
+        "avatar": "http://gravatar.com/avatar/e1bd9a357173c0e4697a54cb404bd966?s=100",
+        "url": "https://twitter.com/asgrim"
+    },
+    {
+        "name": "Andreas Möller",
+        "avatar": "http://gravatar.com/avatar/b6646c155b6da9711dfe0024e6b6de8a?s=100",
+        "url": "https://twitter.com/localheinz"
     }
 ]
