@@ -16,11 +16,15 @@
 
 <pre><code>&lt;script language=php&gt;
 
-<span class="keyword">use</span> <span class="ns">yolo</span> \<span class="class">Request</span>, <span class="ns">yolo</span>\&nbsp;&nbsp;<span class="class">Response</span>, <span class="class">yOlO</span> <span class="keyword">as</span> <span class="class">YOlo</span>;
+<span class="keyword">use function</span> <span class="ns">yolo\</span>y;
 
-<span class="ns">yolo&nbsp;&nbsp;\&nbsp;&nbsp;</span>yolo(<span class="func">function</span> (<span class="class">rEquEST</span> <span class="var">$Request</span>) {
-    <span class="return">return</span> <span class="keyword">new</span> <span class="class">resPONsE</span>(<span class="class">YOlo</span>::clASS);
-});
+<span class="ns">yolo\</span>yolisp(y(<span class="str">'yolo\yolo'</span>,
+    y(<span class="str">'lambda'</span>, y(<span class="str">'request'</span>), 
+        y(<span class="str">'new'</span>, <span class="ns">YoLo\</span><span class="class">resPONsE</span>::clASS, y(
+            y(<span class="str">'quote'</span>, <span class="str">'yolo'</span>)
+        ))
+    )
+));
 
 %&gt;</code></pre>
 
@@ -31,6 +35,7 @@
     </p>
 
     <ul>
+        <li>Solves all PHP's problems by using yolisp instead (Thanks <a href="https://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule">Greenspun</a>!)</li>
         <li>Based on the Symfony components</li>
         <li>Keeps responsibilities separated</li>
         <li>Requires lots of boilerplate code!</li>
