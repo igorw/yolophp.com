@@ -6,7 +6,7 @@ from fabric.contrib.files import exists
 if not env.hosts:
     env.hosts = ['www-data@igor.io']
 
-project_name = 'yolophp.com'
+project_name = 'yolophp.computer'
 target_dir = '/var/www/'+project_name
 backup_dir = target_dir+'-backup'
 staging_dir = target_dir+'-staging'
