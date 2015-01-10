@@ -14,17 +14,15 @@
 <article>
     <h1 id="example"><span>Example</span></h1>
 
-<pre><code>&lt;script language=php&gt;
+<pre><code>&lt;?php
 
 <span class="keyword">use function</span> <span class="ns">yolo\</span>y;
 
 <span class="ns">yolo\</span>yolisp(y(<span class="str">'yolo\yolo'</span>,
     y(<span class="str">'lambda'</span>, y(<span class="str">'request'</span>), 
-        y(<span class="str">'new'</span>, <span class="ns">YoLo\</span><span class="class">resPONsE</span>::clASS, y(<span class="str">'quote'</span>, <span class="str">'yolo'</span>))
+        y(<span class="str">'new'</span>, <span class="ns">YoLo\</span><span class="class">resPONsE</span>::clASS, y(<span class="str">'quote'</span>, <span class="str">"yolo \u{1f640}"</span>))
     )
-));
-
-%&gt;</code></pre>
+));</code></pre>
 
     <h1 id="about"><span>About</span></h1>
 
@@ -37,6 +35,7 @@
         <li>Based on the Symfony components</li>
         <li>Keeps responsibilities separated</li>
         <li>Requires lots of boilerplate code!</li>
+        <li>PHP 7 only, because seriously, PHP 5.6 was <em>so</em> 2014</li>
     </ul>
 
     <p>
